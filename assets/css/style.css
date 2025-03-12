@@ -1,0 +1,157 @@
+
+/* Media Query */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        width: 140px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .hero {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Fundo da página */
+body {
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Navbar transparente */
+.navbar {
+    background: transparent;
+    /* background: rgba(255, 255, 255, 0.2); Fundo transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    padding: 15px;
+}
+
+.navbar-brand img {
+    width: 160px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Deixa o ícone branco */
+}
+
+/* Texto centralizado */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Mantém a hero ocupando a altura toda */
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero i {
+    background-color: white; /* Fundo branco */
+    border-radius: 50%; /* Ícones circulares */
+    padding: 10px; /* Espaço ao redor do ícone */
+    font-size: 18px; /* Tamanho do ícone */
+    margin: 5px; /* Espaço entre os ícones */
+    color: black; /* Cor do ícone */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Largura fixa */
+    height: 40px; /* Altura fixa */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: all 0.3s ease;
+}
+
+.hero i:hover {
+    background-color: #f0f0f0; /* Efeito hover */
+}
+
+section {
+    padding-top: 100px; /* Ajuste conforme necessário */
+}
+
+
+/* body por baixo do header */
+
+.content-box {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    margin-top: 100vh;
+}
+
+.content-box h2 {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+
+
+
