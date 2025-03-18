@@ -1,107 +1,101 @@
-/* Media Query */
-@media (max-width: 991px) {
-    .navbar-brand img {
-        width: 140px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-}
-
 @media (max-width: 576px) {
-    .navbar-brand img {
-        width: 120px;
-    }
-
     .hero {
-        width: 90%;
+        width: 100%;
+        padding: 20px;
     }
 
     .hero h1 {
         font-size: 1.8rem;
+        text-align: center;
     }
 
     .hero p {
         font-size: 1rem;
+        text-align: center;
+    }
+
+    .hero i {
+        display: flex;
+        justify-content: center;
+        margin: 5px auto;
+    }
+
+    .content-box {
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .content-box h2 {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 20px;
     }
 }
 
-
-/* FONTE DE LETRA */´
-
-.overlock-regular {
+/* FONTE DE LETRA */
+´ .overlock-regular {
     font-family: "Overlock", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .overlock-bold {
+}
+
+.overlock-bold {
     font-family: "Overlock", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .overlock-black {
+}
+
+.overlock-black {
     font-family: "Overlock", sans-serif;
     font-weight: 900;
     font-style: normal;
-  }
-  
-  .overlock-regular-italic {
+}
+
+.overlock-regular-italic {
     font-family: "Overlock", sans-serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .overlock-bold-italic {
+}
+
+.overlock-bold-italic {
     font-family: "Overlock", sans-serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .overlock-black-italic {
+}
+
+.overlock-black-italic {
     font-family: "Overlock", sans-serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
+}
+
 
 /* Para navegadores baseados em WebKit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
     width: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: black; /* Fundo da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #8d4d27, red); /* Degradê laranja para vermelho */
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    /* Fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #8d4d27, red);
+    /* Degradê laranja para vermelho */
     border-radius: 6px;
-    border: 2px solid black; /* Adiciona uma borda para destacar o thumb */
-  }
-  
-  /* Para Firefox */
-  * {
+    border: 2px solid black;
+    /* Adiciona uma borda para destacar o thumb */
+}
+
+/* Para Firefox */
+* {
     scrollbar-width: thin;
     scrollbar-color: #8d4d27 black;
-  }
-  
+}
+
 
 /* Fundo da página */
 body {
@@ -214,8 +208,6 @@ section {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 50px 20px;
     margin-top: 100vh;
 }
@@ -227,4 +219,10 @@ section {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
+}
+
+
+/* Dentro da content box */
+.imagem_perfil {
+   margin-left: 10%;
 }
